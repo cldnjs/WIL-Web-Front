@@ -1,34 +1,39 @@
 /* flaot의 영향을 받고싶지 않으면 clear를 적용 */
 #floatLeft {
-    float: left;
-    background: yellow;
-  }
-  .normal {
-    background: skyblue;
-  }
-  #floatRight {
-    float: right;
-    background: yellowgreen;
-  }
-  .clear {
-    clear: both;
-    background: skyblue;
-  }
+  float: left;
+  background: yellow;
+}
 
-  /* 
+.normal {
+  background: skyblue;
+}
+
+#floatRight {
+  float: right;
+  background: yellowgreen;
+}
+
+.clear {
+  clear: both;
+  background: skyblue;
+}
+
+
+/* 
   float의 문제점 
   부모 태그가 float 속성의 자식 태그를 인식하지 못한다(높이가 0이 됨) 
-  */
-  #parent {
-    background: yellow; /* 자식태그인 .float을 인식하지 못해 높이가 0이됨 */
-  }
-  
-  .float {
-    float: left;
-  }
-  
-  #parent-overflow { /* overflow: hidden/auto를 주면 해결가능 */
-    background: skyblue;
-    overflow: auto; 
-    clear: both;
-  }
+*/
+#parent {
+  background: yellow; /* 자식태그인 .float을 인식하지 못해 높이가 0이됨 -> 색이 안변함 */
+}
+
+.float {
+  float: left;
+}
+
+#parent-overflow {
+  /* overflow: hidden/auto를 주면 해결가능 */
+  background: skyblue;
+  overflow: auto;
+  clear: both;
+}
