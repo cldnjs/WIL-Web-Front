@@ -1,0 +1,26 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+부모의 position이 static인 경우에 자식은
+Document를 기준으로 절대 좌표를 유지한다.
+(부모가 static이 아니면 부모의 좌상단을 기준으로 함)
+*/
+#parent {
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    background-color: rosybrown;
+}
+#child {
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    background-color: springgreen;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
